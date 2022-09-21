@@ -1,5 +1,31 @@
+:root 
+
+
 body{background-color: white;}
 body{font-family: 'Roboto', sans-serif ;
 font-weight: 100;
 font-size: 16px;
 line-height: 1.6;}
+
+
+
+
+@keyframes color-change {
+    0% {
+      fill: var(--color-sun-one);
+    }
+    50% {
+      fill: var(--color-sun-two);
+    }
+    100% {
+      fill: var(--color-sun-three);
+    }
+  }
+  
+  .pokecircle {
+    animation-duration: 6s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
