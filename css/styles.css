@@ -1,31 +1,68 @@
-:root 
+:root {
+    --color-pokecircle-one:#E6E9ED;
+    --color-pokecircle-two:#fff700;
+    --color-pokecircle-three:#ff0000; 
+    --color-pokecircle-four:#00ff2a; 
+    --color-pokecircle-five:#0066ff; 
+    
+}
 
 
 body{background-color: white;}
 body{font-family: 'Roboto', sans-serif ;
 font-weight: 100;
 font-size: 16px;
-line-height: 1.6;}
+line-height: 1.6;
+margin: 25%;
+}
+
+.parentdiv {
+    display: inline-block ;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
 
 @keyframes color-change {
     0% {
-      fill: var(--color-sun-one);
+      fill: var(--color-pokecircle-one);
+    }
+    25% {
+      fill: var(--color-pokecircle-two);
     }
     50% {
-      fill: var(--color-sun-two);
+      fill: var(--color-pokecircle-three);
     }
+    75% {
+        fill: var(--color-pokecircle-four);
+      }
     100% {
-      fill: var(--color-sun-three);
+      fill: var(--color-pokecircle-five);
     }
   }
   
   .pokecircle {
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-name: color-change;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
   }
+
+.pokeballLogo {
+    position:relative;
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+    
+}
+
+.introtext {
+
+justify-content: left;
+align-items: left;
+
+}
