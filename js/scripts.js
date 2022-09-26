@@ -4,15 +4,18 @@ let pokemonList=[{name: 'Machamp',height: '1.6',types: ['Fighting']},
                 {name: 'Shiftry',height: '1.3',types: ['Dark','Grass']},
                 {name: 'Charizard',height: '1.7',types: ['Fire','Flying']}]
 
-// for loop that iterates over each item in pokemonList
-for (let i = 0; i < pokemonList.length; i++) 
-{
-    // looks for the biggest Pokémon and adds text
-        if(pokemonList[i].height > 1.6) {
-            document.write(pokemonList[i].name + ' ' + '\(height: ' + pokemonList[i].height + '\)' + ' - With ' + pokemonList[i].name + ' you have a huge Pokémon!' + '<br>');
-    } else {  
-        // goes through the rest of the items without further comments
-            document.write(pokemonList[i].name + ' ' + '\(height: ' + pokemonList[i].height + '\)' + '<br>');
-        }
 
+
+
+
+
+function divide (dividend, divisor) {
+    if(divisor === 0) {
+    return 'You are trying to divide by zero.'
+    
+
+    }else{ 
+        let result = dividend / divisor;
+        return result;
+}
 }
