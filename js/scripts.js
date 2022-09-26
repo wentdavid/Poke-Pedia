@@ -19,8 +19,8 @@ let pokemonRepository = (function () {
     }
   
     return {
-        getAll: getAll
-        add: add,
+        getAll: getAll,
+        add: add
       
     };
 
