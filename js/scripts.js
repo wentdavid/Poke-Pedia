@@ -66,7 +66,7 @@ let pokemonRepository = (function() {
 			item.imageUrl = details.sprites.front_default;
 			item.height = details.height;
 			item.types = details.types;
-			item.ability = details.ability.name;
+			item.abilities = details.abilities;
 		}).catch(function(e) {
 			console.error(e);
 		});
@@ -98,13 +98,20 @@ let pokemonRepository = (function() {
 		pokemonTitle.innerText = pokemon.name;
 
 		let pokemonAbilities = document.createElement('p');
-		pokemonAbilities.innerText = "Abilitiy: " + pokemon.ability;
+		pokemon.abilities.forEach ((p) =>
+		{
+			pokemonAbilities.innerText = "Abilitiy: " + p.ability.name;
+		});
 
 		let pokemonHeight = document.createElement('p');
 		pokemonHeight.innerText = "Height: " + pokemon.height;
 
 		let pokemonTypes = document.createElement('p');
-		pokemonTypes.innerText = "Type: " + pokemon.ability;
+		pokemon.types.forEach ((p) =>
+		{
+			pokemonTypes.innerText = "Type: " + p.type.name;
+		});
+
 
 		let pokemonImage = document.createElement('img');
 		pokemonImage.src = pokemon.imageUrl;
