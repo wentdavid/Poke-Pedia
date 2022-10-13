@@ -17,7 +17,6 @@ font-family: 'Roboto', sans-serif ;
 font-weight: 100;
 font-size: 16px;
 line-height: 1.6;
-margin: 25%;
 }
 
 .parentdiv {
@@ -59,7 +58,7 @@ margin: 25%;
 .pokeballLogo {
     position:relative;
     float: left;
-    width: 100px;
+    width: 50px;
     margin-right: 10px;
     
 }
@@ -69,10 +68,6 @@ margin: 25%;
 justify-content: left;
 align-items: left;
 
-}
-
-.pokemon-list {
-  list-style: none;
 }
 
 /* JavaScript Button for Pokemons */
