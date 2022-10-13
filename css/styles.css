@@ -59,16 +59,33 @@ line-height: 1.6;
     position:relative;
     float: left;
     width: 50px;
-    margin-right: 10px;
+    margin: 5px;
     
 }
 
 .introtext {
 
 justify-content: left;
-align-items: left;
 
 }
+
+.list {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+  flex-grow: 1;
+  
+}
+
+.list-group-item {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+
+}
+
+
 
 /* JavaScript Button for Pokemons */
 .pokemon-list-button {
@@ -78,7 +95,6 @@ align-items: left;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 6px 2px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
@@ -88,6 +104,9 @@ align-items: left;
   min-width: 250px;
   min-height:200px;
   text-transform: capitalize;
+  margin: 20px;
+  
+  
   
   
 }

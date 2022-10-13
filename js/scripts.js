@@ -6,7 +6,7 @@
 let pokemonRepository = (function() {
 	let pokemonList = [];
 	let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
-	let pokemonListElement = document.querySelector('.pokemon-list');
+	let pokemonListElement = document.querySelector('.list-group-item');
 
 	//Fetching pokemon list
 	function loadList() {
@@ -44,7 +44,7 @@ let pokemonRepository = (function() {
 
 	//Adding pokemon items into buttons into .pokemon-list on the index page
 	function addListItem(pokemon) {
-		let pokemonList = document.querySelector('.pokemon-list');
+		let pokemonList = document.querySelector('.list-group-item');
 		let listItem = document.createElement('li');
 		let button = document.createElement('button');
 		button.innerText = pokemon.name;
