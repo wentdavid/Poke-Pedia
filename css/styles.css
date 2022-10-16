@@ -136,10 +136,15 @@ justify-content: left;
  
 }
 
+.close{
+  position: relative;
+  right:-50px;
+}
 
 
 .close span:hover {
- 
+  position: absolute;
+  top: 20px;
   cursor: pointer;
   transition-duration: 0.3s;
   font-size: 22px;

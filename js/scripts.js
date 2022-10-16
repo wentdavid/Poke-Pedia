@@ -75,6 +75,8 @@ let pokemonRepository = (function() {
 			item.height = details.height;
 			item.types = details.types;
 			item.abilities = details.abilities;
+
+
 		}).catch(function(e) {
 			console.error(e);
 		});
@@ -91,6 +93,7 @@ let pokemonRepository = (function() {
 
 ///Bootstrap modal
 	function showModal(item) {
+		
 		let modalBody = $('.modal-body');
 		let modalTitle = $('.modal-title');
 
@@ -109,10 +112,22 @@ let pokemonRepository = (function() {
 		imageElementBack.attr('src', item.imageUrlBack);
 		//creating element for height in modal content
 		let heightElement = $('<p>' + 'Height: ' + item.height + '</p>');
+		
+		let abilitiesElement = item.abilities.forEach((p) => {
+			$("<p>" + "Ability: " + p.item.abilities + "</p>");
+		});
+	   
+		let typesElement = item.types.forEach((p) => {
+			$("<p>" + "Type: " + p.item.types + "</p>");
+		});
+
+
 		//creating element for abilitiy in modal content
-		let abilitiesElement = $('<p>' + 'Ability: ' + item.abilities + '</p>');
+		//let abilitiesElement = $('<p>' + 'Ability: ' + item.abilities + '</p>');
 		//creating element for types in modal content
-		let typesElement = $('<p>' + 'Type: ' + item.types + '</p>');
+		//let typesElement = $('<p>' + 'Type: ' + item.types + '</p>');
+		
+
 
 		modalTitle.append(nameElement);
 		modalBody.append(imageElementFront);
