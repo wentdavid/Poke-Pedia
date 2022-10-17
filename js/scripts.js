@@ -1,7 +1,6 @@
 // Pokemon list with items
 
 
-
 //IIFE pokemonRepository and pokemonList from API
 let pokemonRepository = (function() {
 	let pokemonList = [];
@@ -62,6 +61,18 @@ let pokemonRepository = (function() {
 			showDetails(pokemon);
 		});
 	};
+
+	//search function
+	const searchInput = document.querySelector("[data-search]")
+
+	searchInput.addEventListener("input", e => {
+	const value = e.target.value.toLowerCase()
+	pokemonList.forEach(item => {
+		const isVisible =
+		item.name.toLowerCase().includes(value) 
+		button.classList.toggle("hide", !isVisible)
+	})
+	})
 
 	//Fetching details of a single pokemon from API.
 	function loadDetails(item) {
