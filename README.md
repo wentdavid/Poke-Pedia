@@ -22,3 +22,5 @@ API: https://pokeapi.co/api/v2/pokemon
 
 Live Demo
 https://wentdavid.github.io/Poke-Pedia/
+
+<img width="600" alt="Bildschirmfoto 2022-10-20 um 15 44 41" src="https://user-images.githubusercontent.com/112701190/196965671-f0c9dc37-b909-4c8a-b0ff-13422924d425.png">
