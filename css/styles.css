@@ -59,17 +59,14 @@ line-height: 1.6;
 
 .pokeballLogo {
     position:relative;
-    float: left;
+    float: right;
     width: 50px;
     margin: 5px;
     
 }
 
-.introtext {
 
-justify-content: left;
 
-}
 
 .list {
   list-style: none;

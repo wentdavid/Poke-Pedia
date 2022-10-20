@@ -4,7 +4,7 @@
 //IIFE pokemonRepository and pokemonList from API
 let pokemonRepository = (function() {
 	let pokemonList = [];
-	let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+	let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=15';
 	
 	
 
@@ -84,8 +84,8 @@ let pokemonRepository = (function() {
 			item.imageUrlFront = details.sprites.front_default;
 			item.imageUrlBack = details.sprites.back_default;
 			item.height = details.height;
-			item.types = details.types;
-			item.abilities = details.abilities;
+			item.types = details.types.map((t) => t.type.name);
+			item.abilities = details.abilities.map((a) => a.ability.name);
 
 
 		}).catch(function(e) {
