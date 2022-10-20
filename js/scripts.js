@@ -2,9 +2,9 @@
 
 
 //IIFE pokemonRepository and pokemonList from API
-let pokemonRepository = (function() {
-	let pokemonList = [];
-	let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=15';
+const pokemonRepository = (function() {
+	const pokemonList = [];
+	const apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=15';
 	
 	
 
@@ -28,7 +28,7 @@ let pokemonRepository = (function() {
 
 	function add(pokemon) {
 		if (
-			typeof pokemon === "object" &&
+			typeof pokemon === 'object' &&
 			'name' in pokemon
 		) {
 
@@ -63,14 +63,14 @@ let pokemonRepository = (function() {
 	};
 
 	//search function
-	const searchInput = document.querySelector("[data-search]")
+	const searchInput = document.querySelector('[data-search]')
 
-	searchInput.addEventListener("input", e => {
+	searchInput.addEventListener('input', e => {
 	const value = e.target.value.toLowerCase()
 	pokemonList.forEach(item => {
 		const isVisible =
 		item.name.toLowerCase().includes(value) 
-		button.classList.toggle("hide", !isVisible)
+		button.classList.toggle('hide', !isVisible)
 	})
 	})
 
@@ -123,16 +123,6 @@ let pokemonRepository = (function() {
 		imageElementBack.attr('src', item.imageUrlBack);
 		//creating element for height in modal content
 		let heightElement = $('<p>' + 'Height: ' + item.height + '</p>');
-		
-		// let abilitiesElement = item.abilities.forEach((p) => {
-		// 	$("<p>" + "Ability: " + p.item.abilities + "</p>");
-		// });
-	   
-		// let typesElement = item.types.forEach((p) => {
-		// 	$("<p>" + "Type: " + p.item.types + "</p>");
-		// });
-
-
 		//creating element for abilitiy in modal content
 		let abilitiesElement = $('<p>' + 'Ability: ' + item.abilities + '</p>');
 		//creating element for types in modal content
