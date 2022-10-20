@@ -1,4 +1,4 @@
-PokéPedia (JavaScript App)
+<h1>PokéPedia (JavaScript App)</h1>
 
 This PokéPedia App lists information about Pokémons loaded from an external API. 
 This small web app is built with HTML, CSS and JS and useses Bootstrap. 
