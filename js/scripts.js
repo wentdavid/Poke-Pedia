@@ -1,13 +1,10 @@
 // Pokemon list with items
 
-
 //IIFE pokemonRepository and pokemonList from API
 const pokemonRepository = (function() {
 	const pokemonList = [];
 	const apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=15';
 	
-	
-
 	//Fetching pokemon list
 	function loadList() {
 		return fetch(apiUrl).then(function(response) {
@@ -93,19 +90,12 @@ const pokemonRepository = (function() {
 		});
 	};
 
-
-
 	function showDetails(pokemon) {
 		loadDetails(pokemon).then(function() {
 			showModal(pokemon)
 			// console.log(pokemon);
 		});
 	};
-
-
-
-
-
 
 	return {
 		getAll,
@@ -117,7 +107,6 @@ const pokemonRepository = (function() {
 		showModal,
 	};
 })();
-
 
 pokemonRepository.loadList().then(function() {
 	// Now the data is loaded!
