@@ -3,7 +3,7 @@
 //IIFE pokemonRepository and pokemonList from API
 const pokemonRepository = (function() {
 	const pokemonList = [];
-	const apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=15';
+	const apiUrl = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=18';
 	
 	//Fetching pokemon list
 	function loadList() {
