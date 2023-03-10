@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokéPedia (JavaScript App)</title>
-</head>
 <body>
     <h1>PokéPedia (JavaScript App)</h1>
     <p>This PokéPedia App lists information about Pokémons loaded from an external API. 
